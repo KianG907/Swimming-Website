@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <link href="style.css" rel="stylesheet">
+    <title>Swim</title>
+</head>
+<body>
+<svg>
+    <filter height="100%" id="turbulence" width="100%" x="0" y="0">
+        <feTurbulence baseFrequency="0.02 0.05" id="sea-filter" numOctaves="3" seed="2"></feTurbulence>
+        <feDisplacementMap in="SourceGraphic" scale="20"></feDisplacementMap>
+        <animate attributeName="baseFrequency" dur="60s" keyTimes="0;0.5;1" repeatCount="indefinite"
+                 values="0.02 0.06;0.04 0.08;0.02 0.06" xlink:href="#sea-filter"></animate>
+    </filter>
+</svg>
+<div class="background">
+    <div class="water"></div>
+    <table id="table">
+        <thead id="tableHead">
+        <tr>
+            <td>50 Fly</td>
+            <td>50 Back</td>
+            <td>50 Breast</td>
+            <td>50 Free</td>
+            <td>100 Fly</td>
+            <td>100 Back</td>
+            <td>100 Breast</td>
+            <td>100 Free</td>
+            <td>200 Fly</td>
+            <td>200 Back</td>
+            <td>200 Breast</td>
+            <td>200 Free</td>
+            <td>400 Free</td>
+            <td>800 Free</td>
+            <td>1500 Free</td>
+        </tr>
+        </thead>
+        <tbody id="tableBody">
+        <tr>
+            <td>35</td>
+            <td>37</td>
+            <td>46</td>
+            <td>32</td>
+            <td>1:19</td>
+            <td>1:23</td>
+            <td>1:42</td>
+            <td>1:13</td>
+            <td>NA</td>
+            <td>NA</td>
+            <td>NA</td>
+            <td>2:36</td>
+            <td>NA</td>
+            <td>NA</td>
+            <td>NA</td>
+        </tr>
+        </tbody>
+    </table>
+    <p>
+        I started swimming in 2018, when I was 5 years old. <br>
+        My best stroke is butterfly, and my worst stroke is breaststroke. <br>
+        I swim on a competitive swim team, called Pacific Swim. <br>
+    </p>
+</div>
+<div class="navBar">
+    <nav class="navLinks">
+        <ul>
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <a href="progression.html">Progression</a>
+            </li>
+            <li>
+                <a href="WRcomp.html">WR Comp</a>
+            </li>
+        </ul>
+    </nav>
+</div>
+</nav>
+</div>
+</body>
+
+<script src="table.js"></script>
+</html>

@@ -1,0 +1,105 @@
+﻿*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.background {
+    position: absolute;
+    top: 0;
+    bottom: 0vw;
+    left: 0vw;
+    width: 101vw;
+    height: 100vh;
+    background-image: url(seashore.jpg);
+    background-size: cover;
+}
+
+.background .water {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(transparent-seashore.png);
+    background-size: cover;
+}
+.background .water {
+filter: url("#turbulence");
+}
+.table{
+    border: 1px solid black;
+}
+th, td{
+    padding: 10px;
+}
+table td {
+    padding: 0.5rem;
+    border: 5px solid black;
+}
+table th {
+    padding: 0.5rem;
+    border: 5px solid black;
+}
+.navBar {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.navLinks{
+    position : fixed;
+    top : 0;
+    left : 30%;
+    align-content:first baseline;
+    background : #000000;
+    border-radius: 50px;
+    padding: 10px;
+    box-shadow: 0 25px 20px -20px rgba(0, 0, 0, 0.4);
+}
+.navLinks ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 13px 35px;
+    margin: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #777;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+    transition-color: 0.5s;
+}
+.navLinks ul li:after{
+    content : "";
+    background: #167900;
+    width : 100%;
+    height : 100%;
+    border-radius: 30px;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index : -1;
+    opacity: 0;
+    transition: top 0.5s, opacity 0.5s;
+}
+.navLinks ul li:hover{
+    color : #fff;
+}
+.navLinks ul li:hover:after{
+    opacity: 1;
+    top: 50%;
+}
+#loading{
+    text-align: center;
+}
+.header {
+    text-align: center;
+}
+#table{
+    margin-top: 100px;
+}
+
